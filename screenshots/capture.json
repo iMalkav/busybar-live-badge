@@ -1,0 +1,54 @@
+{
+  "captured_at": "2026-11-05T13:52:57.229035+00:00",
+  "application": {
+    "format_version": 1,
+    "id": "app.imalkav.live_badge",
+    "name": "Live Badge",
+    "version": "0.1.0",
+    "api_version": "27.14.0",
+    "author": "iMalkav",
+    "description": "Show whether a broadcast is live, with its title and audience.",
+    "heap_size_kib": 384,
+    "debug": false
+  },
+  "firmware": {
+    "version": "r1051",
+    "target": 21,
+    "branch": "dev",
+    "build_date": "2026-10-30",
+    "commit_hash": "6ee64ba1",
+    "intercom_version": "6ee64ba1",
+    "nwp_version": "1611.2.1.1.255.11.71",
+    "matter_version": "1.0"
+  },
+  "api_version": "27.15.0",
+  "method": "GET /api/screen?display=0 and display=1; base64 decoded and saved as PNG without resizing or retouching",
+  "settings": {
+    "version": 1,
+    "values": {
+      "source_url": "https://raw.githubusercontent.com/iMalkav/busybar-live-badge/112e871803874371b133f99046900472a0d054a2/examples/response.json",
+      "token": "",
+      "refresh_s": 30
+    }
+  },
+  "inputs": [],
+  "data_note": "Example JSON data served from the public source repository; these are demonstration values, not a live third-party integration.",
+  "fixture": "examples/response.json",
+  "frames": [
+    {
+      "path": "screenshots/front.png",
+      "width": 72,
+      "height": 16,
+      "frame_sha256": "73e3c90676e253696ae0869f6382bbb69cd30a910cac046f803801dbf488ac0d",
+      "png_sha256": "f7beb9fe11dc5389d6faea98157445b764156ed7a6686eb59ab2318e53e77dc4"
+    },
+    {
+      "path": "screenshots/back.png",
+      "width": 160,
+      "height": 80,
+      "frame_sha256": "af35a4d9f51efd6a1144cae7311111bc9e5608e215de74f8a99d39821914d8cb",
+      "png_sha256": "7ee0f1a3868bcdfc2281b4412337632e9711682cfc4e87455136d57357bee352"
+    }
+  ],
+  "verification": "Installed, launched, captured both displays, then quit via the device API. This is not comprehensive physical-device testing or verification on the latest release firmware."
+}
